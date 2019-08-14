@@ -12,7 +12,7 @@ class UserAdmin(BaseUserAdmin):
         (None, {'fields': ('email', 'password')}),
         (_('Personal Info'), {'fields': ('name',)}),
         (
-        _   ('Permissions'),
+            _('Permissions'),
             {
                 'fields': (
                     'is_active',
@@ -30,5 +30,6 @@ class UserAdmin(BaseUserAdmin):
             'fields': ('email', 'password1', 'password2')
         }),
     )
+
 
 admin.site.register(models.User, UserAdmin)
